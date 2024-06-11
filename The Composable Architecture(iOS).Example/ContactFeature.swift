@@ -20,12 +20,21 @@ struct ContactFeature {
     @ObservableState
     struct State: Equatable {
         @Presents var addContact: AddContactFeature.State?
+        @Presents var alert: AlertState<Action.Alert>?
+        
         var contacts: IdentifiedArrayOf<Contact> = []
     }
     
     enum Action {
         case addButtonTapped
         case addContact(PresentationAction<AddContactFeature.Action>)
+        
+        case deleteTapped(id: Contact.ID)
+        case alert(PresentationAction<Alert>)
+        
+        enum Alert: Equatable {
+            case confirmDeletion(id: Contact.ID)
+        }
     }
     
     var body: some ReducerOf<Self> {
@@ -42,6 +51,20 @@ struct ContactFeature {
                 return .none
             case .addContact:
                 return .none
+            case .deleteTapped(let id):
+                state.alert = AlertState {
+                    TextState("Are you sure?")
+                } actions: {
+                    ButtonState(role: .destructive, action: .confirmDeletion(id: id)) {
+                        TextState("Delete")
+                    }
+                }
+                return .none
+            case let .alert(.presented(.confirmDeletion(id: id))):
+                state.contacts.remove(id: id)
+                return .none
+            case .alert:
+                return .none
             }
         }
         /*
@@ -52,5 +75,6 @@ struct ContactFeature {
         .ifLet(\.$addContact, action: \.addContact) {
             AddContactFeature()
         }
+        .ifLet(\.$alert, action: \.alert)
     }
 }
