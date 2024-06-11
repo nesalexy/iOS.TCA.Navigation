@@ -28,7 +28,7 @@ final class ContactsFeatureTests: XCTestCase {
         }
         
         await store.send(\.destination.addContact.saveButtonTapped)
-        await store.receive(\.destination.addContact.delegate.saveContact, 
+        await store.receive(\.destination.addContact.delegate.saveContact,
                              Contact(id: UUID(0), name: "Test")) {
             $0.contacts = [
                 Contact(id: UUID(0), name: "Test")
@@ -55,6 +55,24 @@ final class ContactsFeatureTests: XCTestCase {
             $0.contacts = [
                 Contact(id: UUID(0), name: "Test")
             ]
+            $0.destination = nil
+        }
+    }
+    
+    func testDeleteContact() async {
+        let store = TestStore(initialState: ContactFeature.State(contacts: [
+            Contact(id: UUID(0), name: "Cindy"),
+            Contact(id: UUID(1), name: "Ogneshka"),
+        ])) {
+            ContactFeature()
+        }
+        
+        await store.send(.deleteButtonTapped(id: UUID(1))) {
+            $0.destination = .alert(.deleteConfirmation(id: UUID(1)))
+        }
+        
+        await store.send(.destination(.presented(.alert(.confirmDeletion(id: UUID(1)))))) {
+            $0.contacts.remove(id: UUID(1))
             $0.destination = nil
         }
     }
