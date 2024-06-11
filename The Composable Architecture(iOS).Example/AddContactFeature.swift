@@ -28,6 +28,8 @@ struct AddContactFeature {
          We could have also utilized the @Shared property
          */
         case delegate(Delegate)
+        
+        @CasePathable
         enum Delegate: Equatable {
             case saveContact(Contact)
         }
