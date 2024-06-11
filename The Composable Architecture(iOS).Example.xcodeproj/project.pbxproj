@@ -18,6 +18,8 @@
 		789BBAC52C184BD600D369DC /* ContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC42C184BD600D369DC /* ContactFeature.swift */; };
 		789BBAC72C188CCF00D369DC /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC62C188CCF00D369DC /* Destination.swift */; };
 		789BBAC92C18A75200D369DC /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC82C18A75200D369DC /* ContactsFeatureTests.swift */; };
+		789BBACB2C18EC8B00D369DC /* ContactDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBACA2C18EC8B00D369DC /* ContactDetailFeature.swift */; };
+		789BBACD2C18ECFF00D369DC /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBACC2C18ECFF00D369DC /* ContactDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		789BBAC42C184BD600D369DC /* ContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFeature.swift; sourceTree = "<group>"; };
 		789BBAC62C188CCF00D369DC /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		789BBAC82C18A75200D369DC /* ContactsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTests.swift; sourceTree = "<group>"; };
+		789BBACA2C18EC8B00D369DC /* ContactDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailFeature.swift; sourceTree = "<group>"; };
+		789BBACC2C18ECFF00D369DC /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				789BBAC02C18483900D369DC /* AddContactFeature.swift */,
 				789BBAC22C18498D00D369DC /* AddContactView.swift */,
 				789BBAC62C188CCF00D369DC /* Destination.swift */,
+				789BBACA2C18EC8B00D369DC /* ContactDetailFeature.swift */,
+				789BBACC2C18ECFF00D369DC /* ContactDetailView.swift */,
 				789BBA962C18408C00D369DC /* Assets.xcassets */,
 				789BBA982C18408C00D369DC /* Preview Content */,
 			);
@@ -232,6 +238,8 @@
 				789BBAC12C18483900D369DC /* AddContactFeature.swift in Sources */,
 				789BBAC72C188CCF00D369DC /* Destination.swift in Sources */,
 				789BBA932C18408A00D369DC /* The_Composable_Architecture_iOS__ExampleApp.swift in Sources */,
+				789BBACD2C18ECFF00D369DC /* ContactDetailView.swift in Sources */,
+				789BBACB2C18EC8B00D369DC /* ContactDetailFeature.swift in Sources */,
 				789BBAC32C18498D00D369DC /* AddContactView.swift in Sources */,
 				789BBAC52C184BD600D369DC /* ContactFeature.swift in Sources */,
 			);
