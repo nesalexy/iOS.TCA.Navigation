@@ -18,6 +18,7 @@
 		789BBAC12C18483900D369DC /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC02C18483900D369DC /* AddContactFeature.swift */; };
 		789BBAC32C18498D00D369DC /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC22C18498D00D369DC /* AddContactView.swift */; };
 		789BBAC52C184BD600D369DC /* ContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC42C184BD600D369DC /* ContactFeature.swift */; };
+		789BBAC72C188CCF00D369DC /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BBAC62C188CCF00D369DC /* Destination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		789BBAC02C18483900D369DC /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		789BBAC22C18498D00D369DC /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		789BBAC42C184BD600D369DC /* ContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFeature.swift; sourceTree = "<group>"; };
+		789BBAC62C188CCF00D369DC /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				789BBA942C18408A00D369DC /* ContactsView.swift */,
 				789BBAC02C18483900D369DC /* AddContactFeature.swift */,
 				789BBAC22C18498D00D369DC /* AddContactView.swift */,
+				789BBAC62C188CCF00D369DC /* Destination.swift */,
 				789BBA962C18408C00D369DC /* Assets.xcassets */,
 				789BBA982C18408C00D369DC /* Preview Content */,
 			);
@@ -284,6 +287,7 @@
 			files = (
 				789BBA952C18408A00D369DC /* ContactsView.swift in Sources */,
 				789BBAC12C18483900D369DC /* AddContactFeature.swift in Sources */,
+				789BBAC72C188CCF00D369DC /* Destination.swift in Sources */,
 				789BBA932C18408A00D369DC /* The_Composable_Architecture_iOS__ExampleApp.swift in Sources */,
 				789BBAC32C18498D00D369DC /* AddContactView.swift in Sources */,
 				789BBAC52C184BD600D369DC /* ContactFeature.swift in Sources */,
